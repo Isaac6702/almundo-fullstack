@@ -1,0 +1,12 @@
+
+<search-filters (filter)='changeFilters($event)'></search-filters>
+<div class="row col-sm-8 page">
+    <hotel-card *ngFor="let hotel of hotels" 
+        [idHotel]="hotel.id" 
+        [nameHotel]="hotel.name" 
+        [numberStars]="hotel.stars" 
+        [amenities]="hotel.amenities"
+        [price]="hotel.price"
+        [imageHotel]="hotel.imageUrl">
+    </hotel-card>
+</div>

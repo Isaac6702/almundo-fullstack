@@ -1,0 +1,21 @@
+version: '3'
+services:
+  backend:
+    build: backend
+    links:
+      - mongo
+    depends_on:
+      - mongo
+    environment:
+      - ENV=docker
+  mongo:
+    image: "mongo:latest"
+  gateway:
+    build: client
+    links:
+      - backend:backend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    

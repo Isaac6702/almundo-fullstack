@@ -1,0 +1,43 @@
+@import "../../../scss/custom-variables";
+
+.card {
+  background-color: white;
+  padding: 10px;
+  margin: 20px 5px 5px 5px;
+  
+  img {
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+  .info {
+    margin: 0;
+    padding: 0 15px 15px 15px;
+    p {
+      color: $title-color;
+    }
+    .amenities {
+      img {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 20px auto;
+        margin: 5px;
+      }
+    }
+  }
+  .price {
+    text-align: center;
+    p {
+      color: gray;
+      font-size: 11px;
+    }
+    .detail {
+      color:rgb(223, 99, 0);
+      font-size: 22px;
+      .coin {
+        font-size: 18px;
+      }
+    }
+  }
+}

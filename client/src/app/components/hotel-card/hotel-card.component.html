@@ -1,0 +1,24 @@
+<div class="row card">
+  <img src="{{imageHotel}}" class="col-sm-4 col-xs-12">
+
+  <div class="row col-sm-5 col-xs-12 info">
+    <p>
+      <b>{{nameHotel}}</b>
+    </p>
+    <div class="star">
+      <i *ngFor="let star of starArray" class="icon icon-star-golden"></i>
+    </div>
+    <div class="amenities">
+      <img *ngFor="let name of amenities" src="assets/icons/amenities/{{name}}.svg">
+    </div>
+  </div>
+
+  <div class="row col-sm-3 col-xs-12 price">
+    <p>Precio por noche por habitación</p>
+    <p class="detail">
+      <span class="coin">{{coin}}</span>
+      <b>{{price}}</b>
+    </p>
+    <button type="button" class="btn col-sm-12 col-xs-12">Ver hotel</button>
+  </div>
+</div>

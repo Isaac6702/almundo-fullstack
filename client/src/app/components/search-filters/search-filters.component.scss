@@ -1,0 +1,29 @@
+@import "../../../scss/custom-variables";
+
+.row {
+  margin: 20px;
+  .filter-component {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    input[type="text"] {
+      height: 35px;
+      margin-right: 5px;
+    }
+    .row {
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+
+.filter-component-xs {
+  background-color: white;
+  text-align: center;
+  color: $title-color;
+  height: 45px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.filter-title {
+  color: $title-color;
+}

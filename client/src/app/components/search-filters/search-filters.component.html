@@ -1,0 +1,77 @@
+<div class="hidden-sm hidden-md hidden-lg filter-component-xs">
+  <b class="title">
+    Filtrar <span class="caret"></span>
+  </b>
+</div>
+
+<div class="row col-sm-3 hidden-xs">
+  <div class="filter-component">
+    <b class="title">
+      Filtros
+    </b>
+  </div>
+
+  <div class="filter-component">
+    <span class="title filter-title">
+      <i class="icon icon-search"></i>
+      <b>Nombre del hotel</b>
+    </span>
+    <div class="row">
+      <input class="col-sm-7" type="text" placeholder="Ingrese el nombre del hotel" [(ngModel)]="hotelName">
+      <button type="button" class="btn" (click)="filterByName()">Aceptar</button>
+    </div>
+  </div>
+
+  <div class="filter-component">
+    <span class="title filter-title">
+      <i class="icon icon-star"></i>
+      <b>Estrellas</b>
+      <div class="radio">
+        <label>
+          <input name="stars" type="radio" value="all" checked (change)="filterByStar(null)"> Todas las estrellas
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input name="stars" type="radio" value="5" (change)="filterByStar(5)">
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input name="stars" type="radio" value="4" (change)="filterByStar(4)">
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input name="stars" type="radio" value="3" (change)="filterByStar(3)">
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input name="stars" type="radio" value="2" (change)="filterByStar(2)">
+          <i class="icon icon-star"></i>
+          <i class="icon icon-star"></i>
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input name="stars" type="radio" value="1" (change)="filterByStar(1)">
+          <i class="icon icon-star"></i>
+        </label>
+      </div>
+    </span>
+  </div>
+
+</div>

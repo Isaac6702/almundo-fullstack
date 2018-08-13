@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(244, 244, 244);
+}
+
+header {
+  background-color: $main-color;
+  padding: 5px;
+  a.logo-almundo {
+    display: inline-block;
+    width: $header-width;
+    height: $header-height;
+    background-image: $logo-almundo;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: $logo-almundo-size;
+  }
+}
+.icon {
+  display: inline-block;
+  width: $icon-size;
+  height: $icon-size;
+  background-repeat: no-repeat;
+  background-size: $icon-size auto;
+}
+
+.icon-search {
+  background-image:  url('../assets/icons/filters/search.svg');
+}
+
+.icon-star {
+  background-image:  url('../assets/icons/filters/star.svg');
+}
+
+.icon-star-golden {
+  background-image:  url('../assets/icons/filters/star-golden.svg');
+}
+
+.btn {
+  background-color: $main-color;
+  color: white;
+}
+
