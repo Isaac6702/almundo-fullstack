@@ -28,6 +28,8 @@ export class HotelService {
         if (query.stars) {
             params.set('stars', query.stars);
         }
+        params.set('page', '1'); // TEST
+        params.set('limit', Number.MAX_SAFE_INTEGER.toString()); // TEST
         const options = new RequestOptions({ headers, search: params });
         return this.http.get(url, options)
             .toPromise()
